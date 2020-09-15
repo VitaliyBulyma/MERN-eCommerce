@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from './Layout';
 import { read, listRelated } from './apiCore';
-// import Card from './Card';
+import Card from './Card';
 
 const Product = props => {
     const [product, setProduct] = useState({});
@@ -34,10 +34,10 @@ const Product = props => {
     return (
         <Layout
             title={product && product.name}
-            description={product && product.description && product.description.substring(0, 100)}
+            description={product && product.description && product.description.substring(0, 40)}
             className="container-fluid"
         >
-            {/* <div className="row">
+            <div className="row">
                 <div className="col-8">
                     {product && product.description && <Card product={product} showViewProductButton={false} />}
                 </div>
@@ -50,7 +50,7 @@ const Product = props => {
                         </div>
                     ))}
                 </div>
-            </div> */}
+            </div>
         </Layout>
     );
 };
