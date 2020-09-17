@@ -15,8 +15,9 @@
     border-radius: 50%;
     padding: 2px;
     font-size: 12px;
-    font-style: italic;
-    background: #000;
+    color:black;
+    /* font-style: italic; */
+    /* background: rgb(39, 37, 37); */
 }
 /**
  * single product page - product name
